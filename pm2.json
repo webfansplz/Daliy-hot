@@ -1,0 +1,11 @@
+{
+  "apps": [
+    {
+      "name": "today-hot",
+      "cwd": "./",
+      "script": "./index.js",
+      "watch": true,
+      "ignore_watch": ["node_modules"]
+    }
+  ]
+}
