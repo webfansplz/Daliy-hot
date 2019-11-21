@@ -13,7 +13,6 @@
   </body>
   <script>
     (function() {
-      $(document).ready(function() {
         $.ajax({
           url: "http://localhost:8888/index.json",
           url: "./index.json",
@@ -23,7 +22,6 @@
             $("#content").html(marked(content));
           }
         });
-      });
     })();
   </script>
 </html>
