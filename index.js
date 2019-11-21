@@ -14,9 +14,7 @@ app.use(
     }
   })
 );
-function crontab() {
-  schedule.scheduleJob(`00 50 12 * * *`, mainTask);
-}
+
 function mainTask() {
   const now = dayjs().format("YYYY-MM-DD");
   console.log(chalk.red(`[Process] 开始获取 [${now}] 资讯`));
@@ -46,6 +44,8 @@ function mainTask() {
       mainTask();
     });
 }
-
+function crontab() {
+  schedule.scheduleJob(`00 00 18 * * *`, mainTask);
+}
 crontab();
 app.listen(8888);

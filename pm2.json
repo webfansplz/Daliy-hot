@@ -4,8 +4,8 @@
       "name": "today-hot",
       "cwd": "./",
       "script": "./index.js",
-      "watch": true,
-      "ignore_watch": ["node_modules"]
+      "watch": false,
+      "ignore_watch": ["node_modules", "resource"]
     }
   ]
 }
