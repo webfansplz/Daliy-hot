@@ -45,7 +45,7 @@ function mainTask() {
     });
 }
 function crontab() {
-  schedule.scheduleJob(`00 33 18 * * *`, mainTask);
+  schedule.scheduleJob(`00 00 11 * * *`, mainTask);
 }
 crontab();
 app.listen(8888);
